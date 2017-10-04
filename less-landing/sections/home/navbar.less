@@ -1,0 +1,66 @@
+nav{
+    position: fixed !important;
+    width: 100%;
+    @media only screen and (max-width: 320px){
+        width: 320px;
+    }
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    transition: 0.25s;
+    &.box-shadow{
+        box-shadow: 0 1px 8px 0 rgba(0,0,0,.1);
+    }
+    @media @tablet{
+        font-size: @font-size-xs;
+    }
+    .navbar-brand{
+        margin-right: 0;
+        width: 33.3%;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        width: 33.3%;
+        &.middle{
+            justify-content: center;
+        }
+        .nav-item{
+            &.active{
+                a{
+                    color: @main-color;
+                }
+                
+            }
+            &.hide{
+                margin-left: auto;
+            }
+            @media @tablet{
+                &.hide{
+                    display: none;
+                }
+                &.push-left{
+                    margin-left: auto;
+                }
+            }
+            
+        }
+        @media @mobile-sm{
+               &{
+                  width: 66%; 
+                  .push-left{
+                       margin-left: 0 !important;
+                   }
+               } 
+               
+        }
+        li{
+            margin: 0 10px;
+        }
+        .login-btn{
+            color: @main-color;
+        }
+        .sign-btn{
+            .btn()
+        }
+    }
+}

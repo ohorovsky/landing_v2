@@ -1,0 +1,72 @@
+.pricing-under-header{
+    .mixin(@switch, @main-color);
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: auto;
+  
+    .left{
+        
+        h3{
+            color: @main-color;
+            font-size: @font-size-l;
+            font-weight: 300;
+        }
+        p{
+            padding-top: 20px;
+            line-height: 1.5;
+        }
+    }
+    .right{
+        
+        text-align: center;
+        .btn-1{
+            display: block;
+            margin: 0;
+            width: 100%;
+            font-size: @font-size-m;
+        }
+        p{
+            font-size: @font-size-xs;
+            max-width: 300px;
+            margin: 0 auto;
+            color: @link-color;
+        }
+    }
+}
+
+.faq{
+    .faq-header{
+        text-align: center;
+        p{
+            color: @link-color;
+            font-size: @font-size-xs;
+        }
+        h2{
+           font-size: @font-size-l; 
+        }
+    }
+    
+    .panel-group{
+        max-width: 680px;
+        margin: 0 auto;
+        padding-top: 100px;
+        .panel{
+            .panel-title{
+                a{
+                  color: @main-color;
+                  font-weight: 300;
+                  font-size: @font-size-m;
+                }
+                
+            }
+            .panel-collapse{
+                .panel-body{
+                    color: @link-color;
+                    font-size: @font-size-s;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import "./media_queries";
+@import "./variables";
+@import './sections/home/navbar';
+@import './sections/home/header';
+@import './sections/home/homepage-slider';
+@import './sections/home/under-header';
+@import './sections/home/slider';
+@import './sections/home/under-slider';
+@import './sections/home/hover-boxes';
+@import './sections/home/footer';
+@import './sections/product/header';
+@import './sections/product/dashboard';
+@import './sections/product/plan';
+@import './sections/product/schedule';
+@import './sections/product/automate';
+@import './sections/product/toolbox';
+@import './sections/product/upcoming';
+@import './sections/product/scroll-spy';
+@import './sections/about/about';
+@import './sections/pricing/pricing';
+@import './fadefix';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    opacity: 0;
+    transition: 0.25s;
+    &.show{
+        opacity: 1;
+    }
+}
+.overflow{
+    overflow-x: hidden !important;
+}
+// .container{
+//     min-width: 90% !important;
+// }
+a{
+    color: @link-color;
+    transition: 0.25s;
+    
+}
+a:hover{
+       text-decoration: none; 
+       color: @main-color;
+    }
+    
+h1,h2,p{
+    font-weight: 300 !important;
+}
